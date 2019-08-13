@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/reactjs-foodsi/static/css/main.507f7132.chunk.css",
+    "main.js": "/reactjs-foodsi/static/js/main.13366dc0.chunk.js",
+    "main.js.map": "/reactjs-foodsi/static/js/main.13366dc0.chunk.js.map",
+    "runtime~main.js": "/reactjs-foodsi/static/js/runtime~main.8e2243e3.js",
+    "runtime~main.js.map": "/reactjs-foodsi/static/js/runtime~main.8e2243e3.js.map",
+    "static/js/2.ca1bb6de.chunk.js": "/reactjs-foodsi/static/js/2.ca1bb6de.chunk.js",
+    "static/js/2.ca1bb6de.chunk.js.map": "/reactjs-foodsi/static/js/2.ca1bb6de.chunk.js.map",
+    "index.html": "/reactjs-foodsi/index.html",
+    "precache-manifest.3d85304d8a957d61dd6e3e63db48478c.js": "/reactjs-foodsi/precache-manifest.3d85304d8a957d61dd6e3e63db48478c.js",
+    "service-worker.js": "/reactjs-foodsi/service-worker.js",
+    "static/css/main.507f7132.chunk.css.map": "/reactjs-foodsi/static/css/main.507f7132.chunk.css.map",
+    "static/media/1.jpg": "/reactjs-foodsi/static/media/1.e3702750.jpg",
+    "static/media/2.jpg": "/reactjs-foodsi/static/media/2.f83b96e5.jpg",
+    "static/media/3.jpg": "/reactjs-foodsi/static/media/3.20962ca3.jpg",
+    "static/media/4.jpg": "/reactjs-foodsi/static/media/4.2701a44e.jpg",
+    "static/media/5.jpg": "/reactjs-foodsi/static/media/5.6eb35f66.jpg",
+    "static/media/6.jpg": "/reactjs-foodsi/static/media/6.0fff8492.jpg",
+    "static/media/7.jpg": "/reactjs-foodsi/static/media/7.463143db.jpg",
+    "static/media/8.jpg": "/reactjs-foodsi/static/media/8.aae7b522.jpg",
+    "static/media/about1.jpg": "/reactjs-foodsi/static/media/about1.9bfba192.jpg",
+    "static/media/about2.jpg": "/reactjs-foodsi/static/media/about2.9fa6959a.jpg",
+    "static/media/about3.jpg": "/reactjs-foodsi/static/media/about3.e30838f1.jpg",
+    "static/media/style.css": "/reactjs-foodsi/static/media/main-bg3.2177bfde.jpg"
+  }
+}

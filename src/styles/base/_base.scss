@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-grey-light;
+    font-size: $m-size;
+    background: url('../images/main-bg3.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+li{
+    list-style: none;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: .7rem 4rem;
+    color: black;
+    font-size: $m-size;
+    border-radius: 4px;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: block;
+    }
+
+    &--primary{
+        background: $color-primary;
+        box-shadow: 2px 2px 0px 0px rgba(198,171,0, 0.9);
+        transition: .2s all;
+        &:hover{
+            background: $color-primary-dark;
+        }
+    }
+
+    &--secondary{
+        background: rgba(0,0,0, 0.6);
+        color: $color-grey-light;
+        border: 1px solid $color-primary;
+        text-shadow: 1px 1px 2px black;
+        transition: .2s all;
+        &:hover{
+            background: $color-primary;
+            color: white;
+            border: 1px solid $color-primary-dark;
+        }
+
+    }
+
+}
+
+.heading-primary {
+    color: #FFDD00;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: $xxxl-size;
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .9);
+    text-shadow: 1px 1px 1px rgba(198, 171, 0, .9);
+}
+
+.link{
+    text-decoration: none;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    transition: .4s all;
+    &:hover {
+        color: $color-primary-dark;
+        border-bottom: 1px solid $color-primary-dark;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.content{
+    box-sizing: border-box;
+    margin: 11vh auto;
+    background: rgba(0, 0, 0, .7);
+    clip-path: polygon(0 3rem, 100% 0%, 100% calc(100% - 3rem), 0% 100%);
+    padding: 2rem 2rem 4.5rem 2rem;
+    animation: slide .3s;
+
+    @media only screen and (max-width: $bp-small) {
+        clip-path: none;
+        margin: 0 auto;
+        padding-top: 5rem;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromDown {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    30% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

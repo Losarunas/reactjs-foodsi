@@ -1,0 +1,162 @@
+.navigation {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 65%, rgba(255,255,255,0) 100%);
+    color: white;
+
+    &__items {
+        margin-top: .4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        font-family: 'Oleo Script', cursive;
+        color:rgba(255,255,255,0.9);
+        font-size: $l-size;
+        margin: 0 auto;
+        z-index: 3;
+        text-decoration: none;
+        @media only screen and (max-width: $bp-large2) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        @media only screen and (max-width: $bp-large2) {
+            margin-right: 2rem;
+        }
+
+        & ul{
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+
+    &__nav li{
+        display: inline-block;
+        margin-right: 2.6rem;
+        letter-spacing: 1.2px;
+        &:last-child{
+            margin-right: 3.4rem;
+            position: relative;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-right: 2rem;
+            }
+
+            &::after{
+                content: '';
+                width: 0;
+                height: 87%;
+                position: absolute;
+                border: 1px solid rgba(255,255,255,0.6);
+                top: 0;
+                right: -1.7rem;
+                @media only screen and (max-width: $bp-medium) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__all-links{
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6vh;
+            right: 0px;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+            text-align: center;
+            background-color: rgba(0,0,0,0.8);
+            transform: translateY(-130%);
+            opacity: 0;
+            transition: all .5s ease-in;
+            &--active{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            & li {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited{
+            color: white;
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 1px solid transparent;
+            transition: .4s all;
+            &:hover{
+                border-bottom: 1px solid $color-primary;
+                @media only screen and (max-width: $bp-medium) {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+    }
+
+    &__social-media{
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
+    
+    &__facebook-link{
+        color: $color-grey-light;
+        margin-right: 1rem;
+        transition: .5s all;
+        &:hover{
+            color: #3C5A99;
+        }
+    }
+
+    
+    &__burger {
+        display: none;
+        margin-right: $s-size;
+        cursor: pointer;
+        z-index: 3;
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+        }
+        &--toggle{
+            transition: .5s all;
+            & div:nth-child(1){
+                transform: rotate(-45deg) translate(0px, 5px);
+            }
+            & div:nth-child(2){
+                display: none;
+            }
+            & div:nth-child(3){
+                transform: rotate(45deg) translate(0px, -5px);
+            }
+        }
+        &--line{
+            width: 2rem;
+            height: 2px;
+            background-color: rgba(255,255,255,0.85);
+            margin: 5px;
+            transition: .2s all ease-in;
+        }
+    }
+}
+
+.active-link{
+    color: red;
+    border-bottom: 1px solid $color-primary;
+}
